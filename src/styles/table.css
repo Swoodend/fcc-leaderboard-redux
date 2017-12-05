@@ -1,0 +1,7 @@
+.table-container {
+    height: 80%;
+    width: 60%;
+    background: yellow;
+    overflow-y: auto;
+}
+
