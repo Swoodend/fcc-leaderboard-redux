@@ -2,8 +2,10 @@ body {
     margin: 0;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 1px;
 }
 .app {
     width: 100vw;
