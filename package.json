@@ -19,8 +19,17 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server --open"
+    "test": "jest",
+    "start": "webpack-dev-server --open"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss|jpg)$": "<rootDir>/tests/__mocks__/styleMock.js"
+    },
+    "setupFiles": [
+      "raf/polyfill"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/setupTests.js"
   },
   "author": "",
   "license": "ISC",
