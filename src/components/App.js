@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import mrSmallImg from '../../public/images/mrsmall.jpg';
+import React from 'react';
+import Navbar from './Navbar';
 import '../styles/app.css';
 
 const App = () => {
     return (
         <div className="app">
-            <h1>hello world!</h1>
-            <img src={mrSmallImg}/>
+            <Navbar/>
         </div>
     
     )
