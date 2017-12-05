@@ -1,0 +1,7 @@
+.table-area-container {
+    height: calc(100% - 55px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
