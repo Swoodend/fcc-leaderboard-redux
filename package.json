@@ -24,7 +24,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css|scss|jpg)$": "<rootDir>/tests/__mocks__/styleMock.js"
+      "\\.(css|scss|jpg|jpeg)$": "<rootDir>/tests/__mocks__/styleMock.js"
     },
     "setupFiles": [
       "raf/polyfill"
