@@ -2,6 +2,14 @@
     height: 80%;
     width: 60%;
     background: yellow;
+}
+
+.table-content-area {
+    width: 100%;
+    height: calc(100% - 70px);
+    /* subtract two times the height of the header */
+    display: flex;
+    justify-content: center;
     overflow-y: auto;
 }
 
