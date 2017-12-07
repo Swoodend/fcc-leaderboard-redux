@@ -12,7 +12,16 @@ module.exports = {
             {
                 test: /.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            plugins: [
+                                'transform-decorators-legacy'
+                            ]
+                        }
+                    }
+                ]
             },
             {
                 test: /.css$/,
@@ -38,7 +47,7 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html'
-      }) 
+      })
     ],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
