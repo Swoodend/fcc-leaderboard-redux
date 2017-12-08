@@ -1,15 +1,19 @@
 .table-container {
     height: 80%;
     width: 60%;
-    background: yellow;
+    background: mintcream;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .table-content-area {
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100% - 50px);
     /* subtract two times the height of the header */
+    overflow: auto;
+    padding-top: 5px;
     display: flex;
     justify-content: center;
-    overflow-y: auto;
 }
 
