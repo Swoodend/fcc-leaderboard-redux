@@ -30,7 +30,12 @@ export default class Table extends Component{
         let loading = this.props.fetchingData ? <p>Loading....</p> : null
         let error = this.props.error ? <p>ERROR: {this.props.error.message}</p> : null;
         let tableContentStyle = (error || loading) ? 
-            {color: "red", alignItems:"center"} : {};
+            {
+                color: "red", 
+                display: "flex", 
+                justifyContent:"center",
+                alignItems:"center"
+            } : {};
        
     
         return(
