@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TableHeader = () => {
-    let containerStyle = { background:"darkgreen", height: "35px" };
+    let containerStyle = { width: "100%", background:"darkgreen", height: "35px" };
     let headerStyle = { textAlign:"center", lineHeight: "35px", color: "white" };
     return (
         <div style={containerStyle}>
