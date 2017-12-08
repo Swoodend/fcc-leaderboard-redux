@@ -58,7 +58,7 @@ export function sortByAllTime(){
 export function getAllData(){
 
     return (dispatch) => {
-        Promise.all([fetchRecentData(), fetchAllTimeData()])
+        return Promise.all([fetchRecentData(), fetchAllTimeData()])
         .then(([recent, allTime]) => {
             dispatch(fetchingData(false));            
             dispatch(updateUserData('recent', recent));
