@@ -25,7 +25,7 @@ export default class TabularData extends Component {
             return (
                 <tr key={i}>
                     <td>{i+1}</td>
-                    <td>{dataObj.username}</td>
+                    <td><img className="profile-img" src={dataObj.img}/>{dataObj.username}</td>
                     <td>{dataObj.recent}</td>
                     <td>{dataObj.alltime}</td>
                 </tr>
@@ -39,8 +39,8 @@ export default class TabularData extends Component {
                         <tr>
                             <th>#</th>
                             <th>Username</th>
-                            <th onClick={this.showRecent}>Recent</th>
-                            <th onClick={this.showAllTime}>Alltime</th>
+                            <th onClick={this.showRecent}><a href="#">Recent</a></th>
+                            <th onClick={this.showAllTime}><a href="#">All Time</a></th>                             
                         </tr>
                     </thead>
                     <tbody>
