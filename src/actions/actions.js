@@ -7,7 +7,7 @@ export function fetchingData(bool){
 }
 
 //this willl flip fetchingAllTime or fetchingRecent to false and can display data table
-function updateUserData(fetchType, data){
+export function updateUserData(fetchType, data){
     return {
         type: "SET_DATA",
         fetchType,
@@ -16,7 +16,7 @@ function updateUserData(fetchType, data){
 }
 //this will catch errors associated with fetching and display
 
-function fetchRecentData(){
+export function fetchRecentData(){
     return fetch('https://fcctop100.herokuapp.com/api/fccusers/top/recent')
     .then((res) => {
         return res.json();
@@ -26,7 +26,7 @@ function fetchRecentData(){
     })
 }
 
-function fetchAllTimeData(){
+export function fetchAllTimeData(){
     return fetch('https://fcctop100.herokuapp.com/api/fccusers/top/alltime')
     .then((res) => {
         return res.json();
