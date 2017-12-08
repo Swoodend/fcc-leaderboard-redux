@@ -3,23 +3,8 @@
   "version": "1.0.0",
   "description": "FCC Leaderboard ===============",
   "main": "index.js",
-  "babel": {
-    "presets": [
-      "react",
-      [
-        "env",
-        {
-          "targets": {
-            "browsers": [
-              "last 2 versions"
-            ]
-          }
-        }
-      ]
-    ]
-  },
   "scripts": {
-    "test": "jest",
+    "test": "jest --no-cache",
     "start": "webpack-dev-server --open"
   },
   "jest": {
